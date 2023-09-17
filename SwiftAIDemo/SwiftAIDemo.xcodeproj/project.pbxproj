@@ -54,14 +54,70 @@
 		8D135D7E2AB6B27600E5557E /* SwiftAIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8D135D7F2AB6B27600E5557E /* AppDelegate.swift */,
-				8D135D812AB6B27600E5557E /* SceneDelegate.swift */,
-				8D135D832AB6B27600E5557E /* ViewController.swift */,
-				8D135D882AB6B27700E5557E /* Assets.xcassets */,
-				8D135D8A2AB6B27700E5557E /* LaunchScreen.storyboard */,
-				8D135D8D2AB6B27700E5557E /* Info.plist */,
+				8D135D932AB6BEAD00E5557E /* Application */,
+				8D135D972AB6BF3900E5557E /* Model */,
+				8D135D962AB6BF2C00E5557E /* View */,
+				8D135D942AB6BEDD00E5557E /* Controller */,
+				8D135D982AB6BF7200E5557E /* Coordinator */,
+				8D135D992AB6BF9000E5557E /* Utils */,
+				8D135D952AB6BF1000E5557E /* Resource */,
 			);
 			path = SwiftAIDemo;
+			sourceTree = "<group>";
+		};
+		8D135D932AB6BEAD00E5557E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8D135D7F2AB6B27600E5557E /* AppDelegate.swift */,
+				8D135D812AB6B27600E5557E /* SceneDelegate.swift */,
+				8D135D8A2AB6B27700E5557E /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8D135D942AB6BEDD00E5557E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D135D832AB6B27600E5557E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D135D952AB6BF1000E5557E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8D135D882AB6B27700E5557E /* Assets.xcassets */,
+				8D135D8D2AB6B27700E5557E /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8D135D962AB6BF2C00E5557E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D135D972AB6BF3900E5557E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D135D982AB6BF7200E5557E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8D135D992AB6BF9000E5557E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
