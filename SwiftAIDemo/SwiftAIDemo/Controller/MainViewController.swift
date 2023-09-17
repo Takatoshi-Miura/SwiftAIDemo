@@ -16,15 +16,18 @@ class MainViewController: UIViewController {
     
     // MARK: - UI,Variable
     
+    @IBOutlet weak var objectDetectionButton: UIButton!
     var delegate: MainViewControllerDelegate?
 
     // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .red
+    }
+    
+    /// 物体検出ボタンタップ時
+    @IBAction func tapObjectDetection(_ sender: Any) {
+        self.delegate?.mainVCObjectDetectionDidTap(self)
     }
 
 }

@@ -30,7 +30,8 @@ extension MainCoordinator: MainViewControllerDelegate {
     
     // 物体検出
     func mainVCObjectDetectionDidTap(_ viewController: UIViewController) {
-        
+        let objectDetectionCoordinator = ObjectDetectionCoordinator()
+        objectDetectionCoordinator.startFlow(in: navigationController!)
     }
     
 }

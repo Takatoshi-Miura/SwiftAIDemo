@@ -22,6 +22,10 @@
 		8D135DAE2AB6CEC600E5557E /* DataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D135DAC2AB6CEC600E5557E /* DataSourceViewController.swift */; };
 		8D135DAF2AB6CEC600E5557E /* DataSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D135DAD2AB6CEC600E5557E /* DataSourceViewController.xib */; };
 		8D135DB12AB6CEE500E5557E /* DataSourceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D135DB02AB6CEE500E5557E /* DataSourceCoordinator.swift */; };
+		8D135DB32AB6D36E00E5557E /* ObjectDetectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D135DB22AB6D36E00E5557E /* ObjectDetectionCoordinator.swift */; };
+		8D135DB52AB6D7FE00E5557E /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D135DB42AB6D7FE00E5557E /* YOLOv3Tiny.mlmodel */; };
+		8D135DB72AB6D9AD00E5557E /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D135DB62AB6D9AD00E5557E /* Resnet50.mlmodel */; };
+		8D135DBA2AB6DBB900E5557E /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D135DB92AB6DBB900E5557E /* Vision.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		8D135DAC2AB6CEC600E5557E /* DataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceViewController.swift; sourceTree = "<group>"; };
 		8D135DAD2AB6CEC600E5557E /* DataSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataSourceViewController.xib; sourceTree = "<group>"; };
 		8D135DB02AB6CEE500E5557E /* DataSourceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceCoordinator.swift; sourceTree = "<group>"; };
+		8D135DB22AB6D36E00E5557E /* ObjectDetectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionCoordinator.swift; sourceTree = "<group>"; };
+		8D135DB42AB6D7FE00E5557E /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		8D135DB62AB6D9AD00E5557E /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		8D135DB92AB6DBB900E5557E /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D135DBA2AB6DBB900E5557E /* Vision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,7 @@
 			children = (
 				8D135D7E2AB6B27600E5557E /* SwiftAIDemo */,
 				8D135D7D2AB6B27600E5557E /* Products */,
+				8D135DB82AB6DBB800E5557E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +136,8 @@
 		8D135D972AB6BF3900E5557E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8D135DB62AB6D9AD00E5557E /* Resnet50.mlmodel */,
+				8D135DB42AB6D7FE00E5557E /* YOLOv3Tiny.mlmodel */,
 				8D135DAA2AB6CAED00E5557E /* TabBarPage.swift */,
 			);
 			path = Model;
@@ -138,6 +150,7 @@
 				8D135DA42AB6C9BF00E5557E /* AppCoordinator.swift */,
 				8D135DA62AB6CA3B00E5557E /* TabCoordinator.swift */,
 				8D135DA82AB6CAA600E5557E /* MainCoordinator.swift */,
+				8D135DB22AB6D36E00E5557E /* ObjectDetectionCoordinator.swift */,
 				8D135DB02AB6CEE500E5557E /* DataSourceCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -148,6 +161,14 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8D135DB82AB6DBB800E5557E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D135DB92AB6DBB900E5557E /* Vision.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +252,10 @@
 				8D135DA32AB6C9A300E5557E /* Coordinator.swift in Sources */,
 				8D135DAB2AB6CAEE00E5557E /* TabBarPage.swift in Sources */,
 				8D135DAE2AB6CEC600E5557E /* DataSourceViewController.swift in Sources */,
+				8D135DB72AB6D9AD00E5557E /* Resnet50.mlmodel in Sources */,
+				8D135DB32AB6D36E00E5557E /* ObjectDetectionCoordinator.swift in Sources */,
 				8D135D9C2AB6C03E00E5557E /* MainViewController.swift in Sources */,
+				8D135DB52AB6D7FE00E5557E /* YOLOv3Tiny.mlmodel in Sources */,
 				8D135DA02AB6C8EE00E5557E /* ObjectDetectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
